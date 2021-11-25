@@ -10,16 +10,15 @@ clear
 
 pkg load symbolic
 syms x
-x = -10:1:10
-ix = ((3 ./ 7) .^ x)
+v = -10:1:10
+iv = sec (v)
 
 
 hold on
 
-plot (x, ix);
+plot (v, iv);
 
 grid on
 
-title('Funcion biyectiva');
-
+title('Funcion subreyectiva');
 

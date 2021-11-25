@@ -1,17 +1,18 @@
 %Octave Script
 %Title          :Grafica 1
 %Author         :Jose Manuel Arce Salvador
-%Description    :Graficar una funcion trozos
+%Description    :Graficar ejercicios 
 %Date           :202123801
-%Version        :p1
+%Version        :p14
 %notes          :Requiere aplicacion de octave, usar su linea de comandos
 %
 clear
 
 pkg load symbolic
 syms x
-x = -10:1:10
-ix = ((3 ./ 7) .^ x)
+x = -10:0.1:10
+e = 2.71
+ix = log(x)  / log (e)
 
 
 hold on
@@ -19,7 +20,4 @@ hold on
 plot (x, ix);
 
 grid on
-
-title('Funcion biyectiva');
-
-
+title('Funcion subreyectiva');
